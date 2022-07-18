@@ -1,0 +1,60 @@
+@import "../../styles/Colors.scss";
+
+.header {
+    width: 1290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+
+    &_logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__title {
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            padding-left: 12px;
+        }
+
+        &__image {
+            width: 32px;
+        }
+    }
+
+    &_cart {
+        background-color: $primary;
+        width: 90px;
+        height: 40px;
+        border-radius: 4px;
+        display: flex;
+        color: $white;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        box-sizing: border-box;
+
+        &__total {
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            padding-left: 8px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__currency {
+            padding-left: 4px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: $primary;
+            border: $primary 1px solid;
+            background-color: $white;
+            transition: .35s;
+        }
+    }
+}

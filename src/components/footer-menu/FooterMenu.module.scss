@@ -1,0 +1,72 @@
+@import "../../styles/Colors.scss";
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 1290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 260px;
+    color: $black;
+
+    &__column {
+        padding: 32px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_logo {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        &__title {
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            padding-left: 12px;
+        }
+
+        &__image {
+            width: 32px;
+        }
+
+        &__copyright {
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            padding-left: 12px;
+        }
+    }
+
+    &_title {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: 22px;
+    }
+
+    &_button {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+
+        > a {
+            padding-left: 12px;
+            color: $black;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                color: $primary;
+                transition: .35s;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import "../../styles/Colors.scss";
+
+.layout {
+
+    &_header {
+        display: flex;
+        justify-content: center;
+        background-color: $white;
+        border-bottom: $line_gray 1px solid;
+    }
+
+    &_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        min-height: calc(100vh - 64px - 260px);
+    }   
+
+    &_footer {
+        display: flex;
+        justify-content: center;
+        background-color: $white;
+        border-top: $line_gray 1px solid;
+    }
+}

@@ -1,0 +1,10 @@
+@import "./styles/Colors.scss";
+
+* {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    background: $background_gray;
+}
