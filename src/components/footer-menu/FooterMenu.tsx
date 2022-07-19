@@ -7,6 +7,17 @@ import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg'
 import { ReactComponent as Instagram } from '../../assets/icons/instagram.svg'
 import styles from './FooterMenu.module.scss'
 
+const FooterButton = (title: string, link: string, icon?: React.ReactNode) => {
+    return (
+        <div className={styles.footer_button}>
+            {icon && <span className={styles.footer_button__icon}>{icon}</span>}
+            <a href={link}>
+                {title}
+            </a>
+        </div>
+    )
+}
+
 function FooterMenu() {
     return (
         <div className={styles.footer}>
@@ -25,75 +36,27 @@ function FooterMenu() {
                 <div className={styles.footer_title}>
                     Куда пицца
                 </div>
-                <div className={styles.footer_button}>
-                    <a href='#'>
-                        О компании
-                    </a>
-                </div>
-                <div className={styles.footer_button}>
-                    <a href='#'>
-                        Пользовательское соглашение
-                    </a>
-                </div>
-                <div className={styles.footer_button}>
-                    <a href='#'>
-                        Условия гарантии
-                    </a>
-                </div>
+                {FooterButton('О компании', '#')}
+                {FooterButton('Пользовательское соглашение', '#')}
+                {FooterButton('Условия гарантии', '#')}
             </div>
             <div className={styles.footer__column}>
                 <div className={styles.footer_title}>
                     Помощь
                 </div>
-                <div className={styles.footer_button}>
-                    <a href='#'>
-                        Ресторан
-                    </a>
-                </div>
-                <div className={styles.footer_button}>
-                    <a href='#'>
-                        Контакты
-                    </a>
-                </div>
-                <div className={styles.footer_button}>
-                    <a href='#'>
-                        Поддержка
-                    </a>
-                </div>
-                <div className={styles.footer_button}>
-                    <a href='#'>
-                        Отследить заказ
-                    </a>
-                </div>
+                {FooterButton('Ресторан', '#')}
+                {FooterButton('Контакты', '#')}
+                {FooterButton('Поддержка', '#')}
+                {FooterButton('Отследить заказ', '#')}
             </div>
             <div className={styles.footer__column}>
                 <div className={styles.footer_title}>
                     Контакты
                 </div>
-                <div className={styles.footer_button}>
-                    <Phone className={styles.footer_button__icon} />
-                    <a href='#'>
-                        +7 (926) 223-10-11
-                    </a>
-                </div>
-                <div className={styles.footer_button}>
-                    <Address className={styles.footer_button__icon} />
-                    <a href='#'>
-                        Москва, ул. Юных Ленинцев, д.99
-                    </a>
-                </div>
-                <div className={styles.footer_button}>
-                    <Facebook className={styles.footer_button__icon} />
-                    <a href='#'>
-                        Facebook
-                    </a>
-                </div>
-                <div className={styles.footer_button}>
-                    <Instagram className={styles.footer_button__icon} />
-                    <a href='#'>
-                        Instagram
-                    </a>
-                </div>
+                {FooterButton('+7 (926) 223-10-11', '#', <Phone />)}
+                {FooterButton('Москва, ул. Юных Ленинцев, д.99', '#', <Address />)}
+                {FooterButton('Facebook', '#', <Facebook />)}
+                {FooterButton('Instagram', '#', <Instagram />)}
             </div>
 
         </div>

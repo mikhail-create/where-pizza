@@ -3,5 +3,6 @@
 ## ToDo
 
 - [X] Convert brand name to svg format
-- [ ] Change footer menu, using pattern
-- [ ] To complete nav bar
+- [X] Change footer menu, using pattern
+- [X] To complete nav bar
+- [ ] Create fire sales block
