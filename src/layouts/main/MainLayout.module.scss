@@ -12,8 +12,8 @@
     &_content {
         display: flex;
         justify-content: center;
-        align-items: center;
         height: fit-content;
+        background-color: $background_gray;
         min-height: calc(100vh - 64px - 260px);
     }   
 

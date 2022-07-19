@@ -1,0 +1,32 @@
+@import "../../styles/Colors.scss";
+
+.button {
+    box-sizing: border-box;
+    border: 1px solid $line_gray;
+    width: 135px;
+    height: 104px;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    > a {
+        padding-top: 8px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        text-decoration: none;
+        color: $black;
+    }
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $primary;
+        background-color: rgba($primary, $alpha: 0.1);
+        transition: .35s;
+    }
+}
