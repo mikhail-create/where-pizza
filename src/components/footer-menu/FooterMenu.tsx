@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactComponent as Logo } from '../../assets/icons/logo.svg'
+import { ReactComponent as LogoTitle } from '../../assets/icons/logo_title.svg'
 import { ReactComponent as Phone } from '../../assets/icons/phone.svg'
 import { ReactComponent as Address } from '../../assets/icons/address.svg'
 import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg'
@@ -13,9 +14,7 @@ function FooterMenu() {
                 <div className={styles.footer_logo}>
                     <div className={styles.footer_logo__image}>
                         <Logo />
-                    </div>
-                    <div className={styles.footer_logo__title}>
-                        Куда пицца
+                        <LogoTitle className={styles.footer_logo__title} />
                     </div>
                 </div>
                 <div className={styles.footer_logo__copyright}>
@@ -72,25 +71,25 @@ function FooterMenu() {
                     Контакты
                 </div>
                 <div className={styles.footer_button}>
-                    <Phone />
+                    <Phone className={styles.footer_button__icon} />
                     <a href='#'>
                         +7 (926) 223-10-11
                     </a>
                 </div>
                 <div className={styles.footer_button}>
-                    <Address />
+                    <Address className={styles.footer_button__icon} />
                     <a href='#'>
                         Москва, ул. Юных Ленинцев, д.99
                     </a>
                 </div>
                 <div className={styles.footer_button}>
-                    <Facebook />
+                    <Facebook className={styles.footer_button__icon} />
                     <a href='#'>
                         Facebook
                     </a>
                 </div>
                 <div className={styles.footer_button}>
-                    <Instagram />
+                    <Instagram className={styles.footer_button__icon} />
                     <a href='#'>
                         Instagram
                     </a>

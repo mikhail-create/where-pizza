@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { ReactComponent as Logo } from '../../assets/icons/logo.svg'
+import { ReactComponent as LogoTitle } from '../../assets/icons/logo_title.svg'
 import { ReactComponent as Cart } from '../../assets/icons/cart.svg'
 import styles from './HeaderMenu.module.scss'
 
@@ -8,12 +9,8 @@ function HeaderMenu() {
     return (
         <div className={styles.header}>
             <div className={styles.header_logo}>
-                <div className={styles.header_logo__image}>
-                    <Logo />
-                </div>
-                <div className={styles.header_logo__title}>
-                    Куда пицца
-                </div>
+                <Logo />
+                <LogoTitle className={styles.header_logo__title} />
             </div>
             <div
                 className={styles.header_cart}
