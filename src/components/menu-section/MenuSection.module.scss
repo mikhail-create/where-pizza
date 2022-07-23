@@ -1,6 +1,8 @@
 @import "../../styles/Colors.scss";
 
 .section {
+    margin-top: 30px;
+    
     &_title {
         font-family: Inter;
         font-weight: 600;
@@ -45,6 +47,8 @@
     &_content {
         margin-top: 30px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(4, 300px);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
     }
 }
