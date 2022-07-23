@@ -1,0 +1,50 @@
+@import "../../styles/Colors.scss";
+
+.section {
+    &_title {
+        font-family: Inter;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__filter {
+            box-sizing: border-box;
+            width: 125px;
+            height: 40px;
+            border: 1px solid $line_gray;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+
+            span {
+                font-family: "Source Sans Pro", sans-serif;
+                margin-left: 8px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0px;
+                text-align: center;
+            }
+
+            &:hover {
+                cursor: pointer;
+                border: 1px solid $primary;
+                background-color: rgba($primary, $alpha: 0.1);
+                transition: 0.35s;
+            }
+        }
+    }
+
+    &_content {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
