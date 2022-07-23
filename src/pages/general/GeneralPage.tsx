@@ -19,8 +19,10 @@ function GeneralPage() {
                 <Firesale image={FirasaleImageSecond} color="red" title='Кэшбек 10% на самовывоз (доставка)' />
             </div>
             <div className={styles.general__content}>
-                <MenuSection title='Пицца' link='#pizza' />
+                <MenuSection title='Пицца' link='pizza' />
+                <MenuSection title='Суши' link='sushi' />
             </div>
+
         </div>
     )
 }

@@ -7,11 +7,19 @@ interface NavButtonProps {
     title: string;
 }
 
+const moveToSection = (link: string) => {
+    console.log(link);
+    const section = document.querySelector(link)
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' })
+    }
+}
+
 function NavButton(props: NavButtonProps) {
   return (
-    <div className={styles.button}>
+    <div className={styles.button} onClick={() => moveToSection(props.link)}>
         {props.icon}
-        <a href={props.link}>{props.title}</a>
+        <span>{props.title}</span>
     </div>
   )
 }

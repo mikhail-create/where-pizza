@@ -13,8 +13,8 @@ import NavButton from '../nav-button/NavButton';
 function NavMenu() {
     const categories = [
         { title: 'Акции', link: '#', icon: <Fire /> },
-        { title: 'Пицца', link: '#', icon: <Pizza /> },
-        { title: 'Суши', link: '#', icon: <Sushi /> },
+        { title: 'Пицца', link: '#pizza', icon: <Pizza /> },
+        { title: 'Суши', link: '#sushi', icon: <Sushi /> },
         { title: 'Напитки', link: '#', icon: <Drink /> },
         { title: 'Закуски', link: '#', icon: <Snaks /> },
         { title: 'Комбо', link: '#', icon: <Combo /> },
