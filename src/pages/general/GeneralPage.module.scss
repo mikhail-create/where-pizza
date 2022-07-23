@@ -1,4 +1,14 @@
 .general {
     width: 1290px;
-    margin-top: 30px;
+
+    &__nav {
+        margin-top: 30px;
+    }
+
+    &__firesales {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

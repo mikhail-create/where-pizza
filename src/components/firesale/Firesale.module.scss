@@ -1,0 +1,39 @@
+@import "../../styles/Colors.scss";
+
+.firesale {
+    width: 300px;
+    height: 340px;
+    border-radius: 15px;
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 230px;
+        
+        > img {
+            width: 300px;
+        }
+    }
+
+    &__title {
+        white-space: pre-line;
+        padding: 265px 20px 20px 20px;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0px;
+        color: $white;
+        text-align: left;
+    }
+}
+
+.red {
+    background-color: $red;
+}
+
+.orange {
+    background-color: $primary;
+}

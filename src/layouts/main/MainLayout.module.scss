@@ -18,6 +18,8 @@
     }   
 
     &_footer {
+        margin-top: 60px;
+        clear: both;
         display: flex;
         justify-content: center;
         background-color: $white;
