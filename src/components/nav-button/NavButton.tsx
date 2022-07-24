@@ -1,18 +1,11 @@
 import React from 'react'
+import { moveToSection } from '../../_helpers/moveToSection';
 import styles from './NavButton.module.scss'
 
 interface NavButtonProps {
     icon: React.ReactNode;
     link: string;
     title: string;
-}
-
-const moveToSection = (link: string) => {
-    console.log(link);
-    const section = document.querySelector(link)
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' })
-    }
 }
 
 function NavButton(props: NavButtonProps) {
