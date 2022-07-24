@@ -6,5 +6,5 @@
 - [X] Change footer menu, using pattern
 - [X] To complete nav bar
 - [X] Create fire sales block
-- [ ] Create product card
+- [X] Create product card
 - [ ] Add filter and links in nav menu

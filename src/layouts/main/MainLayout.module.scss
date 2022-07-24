@@ -14,12 +14,13 @@
         justify-content: center;
         height: fit-content;
         background-color: $background_gray;
-        min-height: calc(100vh - 64px - 260px);
+        min-height: calc(100vh - 60px - 260px - 65px - 1px);
     }   
 
     &_footer {
+        width: 100%;
         margin-top: 60px;
-        clear: both;
+        bottom: 0;
         display: flex;
         justify-content: center;
         background-color: $white;

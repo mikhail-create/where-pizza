@@ -7,12 +7,13 @@ import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg'
 import { ReactComponent as Instagram } from '../../assets/icons/instagram.svg'
 import styles from './FooterMenu.module.scss'
 import { FooterLinkSchema } from '../../schemas/FooterLinkSchema'
+import { Link } from 'react-router-dom'
 
-const FooterLinks:FooterLinkSchema[] = [
+const FooterLinks: FooterLinkSchema[] = [
     {
         title: 'Куда пицца', items: [
-            { title: 'О компании', link: '#', icon: '' },
-            { title: 'Пользовательское соглашение', link: '#', icon: '' },
+            { title: 'О компании', link: '/info/about', icon: '' },
+            { title: 'Пользовательское соглашение', link: '/info/terms', icon: '' },
             { title: 'Политика конфиденциальности', link: '#', icon: '' }
         ]
     },
@@ -26,8 +27,8 @@ const FooterLinks:FooterLinkSchema[] = [
     },
     {
         title: 'Контакты', items: [
-            { title: '+7 (926) 223-10-11', link: '#', icon: <Phone /> },
-            { title: 'Москва, ул. Юных Ленинцев, д.99', link: '#', icon: <Address /> },
+            { title: '+7 (111) 222-33-44', link: '#', icon: <Phone /> },
+            { title: 'Москва, Лаврушинский пер., 10', link: '#', icon: <Address /> },
             { title: 'Facebook', link: '#', icon: <Facebook /> },
             { title: 'Instagram', link: '#', icon: <Instagram /> }
         ]
@@ -38,9 +39,9 @@ const FooterButton = (title: string, link: string, icon?: React.ReactNode) => {
     return (
         <div className={styles.footer_button} key={title}>
             {icon && <span className={styles.footer_button__icon}>{icon}</span>}
-            <a href={link}>
+            <Link to={link}>
                 {title}
-            </a>
+            </Link>
         </div>
     )
 }
