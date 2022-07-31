@@ -1,16 +1,20 @@
 import React from 'react'
 import styles from './ModalWindow.module.scss'
 
-function ModalWindow() {
+interface ModalWindowProps {
+    backToMenu: () => void
+}
+
+function ModalWindow(props: ModalWindowProps) {
     return (
-        <div className={styles.modal} onClick={() => console.log('click')}>
+        <div className={styles.modal} onClick={props.backToMenu}>
             <div className={styles.modal_window} onClick={(e) => e.stopPropagation()}>
                 <div className={styles.modal_window__image}>
                     IMAGE
                 </div>
                 <div className={styles.modal_window_content}>
                     <div className={styles.modal_window_content__title}>
-                        Пицца
+                        <h4>Пицца   </h4>
                     </div>
                     <div className={styles.modal_window_content__compound}>
                         Соус красный, сыр моцарелла, томаты черри

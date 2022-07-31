@@ -33,12 +33,79 @@
 
         &_content {
             width: 50%;
-            height: 100%;
+            height: calc(100% - 40px);
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
+            font-family: "Inter", sans-serif;
+            color: $black;
+            padding: 20px 20px 20px 0;
+
+            &__title {
+                > h4 {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+
+            &__compound {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            &__removable {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            &__additional {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            &__total {
+                width: 100%;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+                color: $primary;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                > button {
+                    width: 155px;
+                    height: 48px;
+                    right: 325px;
+                    bottom: 153px;
+                    background: $primary;
+                    border-radius: 6px;
+                    border: 0;
+                    color: $white;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $primary;
+                        border: $primary 1px solid;
+                        background-color: $white;
+                        transition: 0.35s;
+                    }
+                }
+            }
         }
     }
-
 }

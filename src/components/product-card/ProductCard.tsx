@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ModalWindow from '../modal-window/ModalWindow'
 import styles from './ProductCard.module.scss'
 
 function ProductCard() {
+    const [isModalOpen, setIsModalOpen] = useState(false)
+    const changeModalState = () => setIsModalOpen(!isModalOpen)
     return (
-        <div className={styles.card}>
+        <div className={styles.card} onClick={() => changeModalState()}>
+            {isModalOpen && <ModalWindow backToMenu={changeModalState} />}
             <div className={styles.card__image}>
                 <img src="https://via.placeholder.com/298" alt="" />
             </div>
